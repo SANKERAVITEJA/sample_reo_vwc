@@ -79,5 +79,17 @@ public class IteamController {
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
+	/* 
+	@PatchMapping("/iteam/{id}/{cost}")
+	public ResponseEntity<Iteam1> updateIteamPartially(@PathVariable Long id, @PathVariable Integer cost) {
+		try {
+			Iteam1 item = ir.findById(id).get();
+			item.setCost(cost);
+			return new ResponseEntity<Iteam1>(ir.save(item), HttpStatus.OK);
+		} catch (Exception e) {
+			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+	*/
 
 }
